@@ -12,7 +12,7 @@ body {
     align-items: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
-    text-shadow: 0 2px 2px #000;
+    text-shadow: 0 3px 2px #000;
     background-color: #75b4e3;
 }
 
@@ -128,11 +128,24 @@ button {
     background-color: rgb(82, 138, 180);
 }
 
+.background {
+    position: absolute;
+    height: 70vh;
+    width: 50vw;
+    top: 15%;
+    left: 25%;
+    border-radius: 16px;
+    opacity: 30%;
+}
+
 /* Responsive design for phone */
 @media (max-width:576px) {
+    .container {
+        width: 70vw;
+    }
     .humid, .precip {
         font-size: 1.2rem;
-        width: 42%;
+        width: 30%;
     }
 
     .desc {

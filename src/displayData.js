@@ -1,3 +1,7 @@
+import sunnyDay from "../assets/sunny.PNG"
+import cloudyDay from "../assets/cloudy.PNG"
+import rainyDay from "../assets/rainy.PNG"
+
 function displayInfo(location, temperature , conditions, description, humidity, precipitation) {
     // Clear form content
     document.body.innerHTML = "";
@@ -5,6 +9,17 @@ function displayInfo(location, temperature , conditions, description, humidity, 
     // Create div container to store all information
     const container = document.createElement("div");
     container.classList.add("container")
+
+    // Create background image
+    const backgroundImg = document.createElement("img")
+    backgroundImg.classList.add("background")
+    if (conditions.includes("clear")) {
+        backgroundImg.src = sunnyDay;
+    } else if (conditions.includes("cloudy")) {
+        backgroundImg.src = cloudyDay;
+    } else if (conditions.includes("rain")) {
+        backgroundImg.src = rainyDay;
+    }
 
     // Create a div for location, temp and condition
     const main = document.createElement("div");
@@ -43,6 +58,7 @@ function displayInfo(location, temperature , conditions, description, humidity, 
     secondary.appendChild(precip);
 
     // Append all info into div container
+    container.appendChild(backgroundImg);
     container.appendChild(main);
     container.appendChild(desc);
     container.appendChild(secondary);
