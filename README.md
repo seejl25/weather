@@ -7,8 +7,8 @@ It starts off with a simple form where users can key in their choice of location
 
 How it is built:
 
-HTML, CSS, Javascript
-HTML was used to create the form for users to fill in the location. Javascript was then used to retrieve the JSON data from the weather API based on the location that users filled in. The data is then processed such that only certain information will be displayed on the webpage. CSS was then used to style both the form and the information to be presented.
+HTML, CSS, Javascript, DotPict
+HTML was used to create the form for users to fill in the location. Javascript was then used to retrieve the JSON data from the weather API based on the location that users filled in. The data is then processed such that only certain information will be displayed on the webpage. CSS was then used to style both the form and the information to be presented. DotPict was used to draw out the background images for different weather conditions.
 Challenges faced:
 
 Was too focused on async and await, which was something new that I have just learnt, and ended up making some small mistakes when writing the code. 
@@ -24,6 +24,7 @@ Fetching of data from API URl
 
 Next steps:
 
-More work needs to be done with regards to the styling, such as inserting different background image for different weather conditions
-Include some form validation functions 
-Include more information that might be more useful as different countries have different seasons and weather conditions
+- More work needs to be done with regards to the styling, such as animations, inserting more background images for different weather conditions like snow etc
+- Include some form validation functions 
+- Include more information that might be useful as different countries have different seasons and weather conditions
+- Converting into a web app or extension
